@@ -1,0 +1,21 @@
+{
+  "product_take": 0.05,
+  "packaging_per_order": 11.0,
+  "rider_cost_per_trip": 42.0,
+  "picker_wage_per_day": 750.0,
+  "fixed_cost_per_day": 17216.784500000005,
+  "diag": {
+    "orders_per_day": 1511.35,
+    "sla_breach_rate": 0.0004300790683825719,
+    "rider_utilization": 0.4201802384652642,
+    "picker_utilization": 0.4097304696389006,
+    "rider_cost_per_order": 11.115889767426474,
+    "picking_cost_per_order": 4.962450789029676,
+    "fixed_cost_per_day": 17216.784500000005,
+    "target_loss_per_order": -3.02,
+    "reproduced_contribution": -3.020000000000003,
+    "n_pickers": 10,
+    "n_riders": 24,
+    "anchor_player": "Blinkit"
+  }
+}
