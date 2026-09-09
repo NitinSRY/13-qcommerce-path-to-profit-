@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "elapsed_sec": 144.9,
+    "replications": 20,
+    "sobol_n": 64,
+    "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.9"
+  },
+  "calibration": {
+    "orders_per_day": 1511.35,
+    "sla_breach_rate": 0.0004300790683825719,
+    "rider_utilization": 0.4201802384652642,
+    "picker_utilization": 0.4097304696389006,
+    "rider_cost_per_order": 11.115889767426474,
+    "picking_cost_per_order": 4.962450789029676,
+    "fixed_cost_per_day": 17216.784500000005,
+    "target_loss_per_order": -3.02,
+    "reproduced_contribution": -3.020000000000003,
+    "n_pickers": 10,
+    "n_riders": 24,
+    "anchor_player": "Blinkit"
+  },
+  "tier2_fragility": {
+    "n_pickers": 3,
+    "n_riders": 12,
+    "sim_orders_arrived": 340.45,
+    "sim_orders_delivered": 340.45,
+    "sim_mean_delivery_min": 10.893340113485877,
+    "sim_p90_delivery_min": 15.322682679292745,
+    "sim_sla_breach_rate": 0.11381994419151123,
+    "sim_rider_utilization": 0.39537437734741004,
+    "sim_picker_utilization": 0.3319936026070751,
+    "sim_mean_pick_wait_min": 3.0413560976915393,
+    "sim_mean_dispatch_wait_min": 0.16273034118402177,
+    "sim_rider_cost_per_order": 24.673226611837276,
+    "sim_picking_cost_per_order": 6.608899985313556,
+    "econ_aov": 560,
+    "econ_revenue_product": 28.0,
+    "econ_revenue_ads": 0.0,
+    "econ_packaging": 11.0,
+    "econ_rider": 24.673226611837276,
+    "econ_picking": 6.608899985313556,
+    "econ_fixed": 50.57066970186519,
+    "econ_revenue": 28.0,
+    "econ_cost": 92.85279629901603,
+    "econ_contribution": -64.85279629901603,
+    "contribution": -64.85279629901603
+  },
+  "breakeven_frontier": {
+    "batch_target": 2,
+    "levers": {
+      "orders_per_day": 788.295204016252,
+      "aov": 560.0,
+      "ad_take": 0.042543667679879375
+    },
+    "contribution": 0.0023752134541865644,
+    "sla_breach": 0.2596300050684237,
+    "effort": 2.0768371804254024,
+    "feasible": true
+  },
+  "aov_only_strawman": [
+    {
+      "orders_per_day": 340.0,
+      "aov": 720.0,
+      "contribution": -56.88887599177198,
+      "sla_breach": 0.11504554804584191
+    },
+    {
+      "orders_per_day": 520.0,
+      "aov": 720.0,
+      "contribution": -39.00777160132631,
+      "sla_breach": 0.09498732202067486
+    },
+    {
+      "orders_per_day": 700.0,
+      "aov": 720.0,
+      "contribution": -29.383734610123128,
+      "sla_breach": 0.10173518611851105
+    }
+  ],
+  "sobol": {
+    "names": [
+      "orders_per_day",
+      "batch_target",
+      "aov",
+      "ad_take"
+    ],
+    "S1": [
+      0.4821380125395458,
+      0.06706411958690237,
+      0.008657019037323126,
+      0.2594175183014614
+    ],
+    "ST": [
+      0.6437903933436068,
+      0.13848706657899904,
+      0.08311684886571631,
+      0.34795691003562146
+    ],
+    "ranked": [
+      [
+        "orders_per_day",
+        0.4821380125395458,
+        0.6437903933436068
+      ],
+      [
+        "ad_take",
+        0.2594175183014614,
+        0.34795691003562146
+      ],
+      [
+        "batch_target",
+        0.06706411958690237,
+        0.13848706657899904
+      ],
+      [
+        "aov",
+        0.008657019037323126,
+        0.08311684886571631
+      ]
+    ]
+  },
+  "placement": {
+    "n_stores": 6,
+    "optimized_covered_fraction": 0.40177415004749456,
+    "naive_covered_fraction": 0.3570606591316581,
+    "lp_upper_bound": 740394.8670554914,
+    "optimality_gap": 0.0,
+    "optimized_cells": [
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        4
+      ]
+    ]
+  }
+}

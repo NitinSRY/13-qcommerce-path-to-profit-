@@ -1,0 +1,26 @@
+{
+  "real_city_comparison": [
+    {
+      "city": "bengaluru",
+      "label": "metro",
+      "orders_per_day": 1247.0,
+      "mean_drop_km": 0.99,
+      "covered_fraction": 0.115,
+      "n_riders": 17,
+      "n_pickers": 10,
+      "rider_utilization": 0.376,
+      "contribution_per_order": -2.11
+    },
+    {
+      "city": "lucknow",
+      "label": "tier-2",
+      "orders_per_day": 350.0,
+      "mean_drop_km": 0.39,
+      "covered_fraction": 0.14,
+      "n_riders": 4,
+      "n_pickers": 4,
+      "rider_utilization": 0.34,
+      "contribution_per_order": -38.76
+    }
+  ]
+}
