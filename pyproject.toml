@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcom-path-to-profit"
+version = "0.1.0"
+description = "A spatial dark-store digital twin that locates the tier-2 breakeven frontier for quick commerce"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Apoorv Joshi" }]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.0",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.30"]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+qcom = "qcom.cli:main"
+
+[tool.setuptools]
+packages = ["qcom"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
